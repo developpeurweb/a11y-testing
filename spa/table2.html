@@ -1,0 +1,142 @@
+<head>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<main cxskiplink="cx-main" tabindex="-1" class="mouse-focus">
+  <router-outlet></router-outlet>
+  <cx-page-layout class="AccountPageTemplate">
+    <cx-page-slot position="BodyContent" class="BodyContent has-components">
+      <cx-tab-paragraph-container>
+        <button class="active">ALL ORDERS (1)</button>
+        <button>RETURNS (0)</button>
+        <div class="active">
+          <cx-order-history>
+            <div class="container">
+              <div class="cx-order-history-header">
+                <h3>Order history</h3>
+              </div>
+              <div class="cx-order-history-body">
+                <div class="cx-order-history-sort top row">
+                  <div
+                    class="
+                      cx-order-history-form-group
+                      form-group
+                      col-sm-12 col-md-4 col-lg-4
+                    "
+                  >
+                    <cx-sorting>
+                      <ng-select
+                        class="
+                          ng-select
+                          ng-select-single
+                          ng-untouched
+                          ng-pristine
+                          ng-valid
+                        "
+                        ><div class="ng-select-container ng-has-value">
+                          <div class="ng-value-container">
+                            <div class="ng-placeholder">
+                              Sort by Most recent
+                            </div>
+                            <div class="ng-value">
+                              <span
+                                aria-hidden="true"
+                                class="ng-value-icon left"
+                                >×</span
+                              >
+                              <span class="ng-value-label">Date</span>
+                            </div>
+
+                            <div
+                              role="combobox"
+                              aria-haspopup="listbox"
+                              class="ng-input"
+                              aria-expanded="false"
+                            >
+                              <input
+                                aria-autocomplete="list"
+                                type="text"
+                                autocorrect="off"
+                                autocapitalize="off"
+                                autocomplete="afa9248261ba"
+                                readonly=""
+                              />
+                            </div>
+                          </div>
+                          <span class="ng-arrow-wrapper">
+                            <span class="ng-arrow"></span>
+                          </span>
+                        </div>
+                      </ng-select>
+                    </cx-sorting>
+                  </div>
+                </div>
+                <table class="table cx-order-history-table">
+                  <thead class="cx-order-history-thead-mobile">
+                    <th scope="col">Order #</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Total</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="cx-order-history-code">
+                        <div class="d-md-none cx-order-history-label">
+                          Order #
+                        </div>
+                        <a
+                          class="cx-order-history-value"
+                          href="/electronics-spa/en/USD/my-account/order/00001010"
+                        >
+                          00001010</a
+                        >
+                      </td>
+                      <td class="cx-order-history-placed">
+                        <div class="d-md-none cx-order-history-label">Date</div>
+                        <a
+                          class="cx-order-history-value"
+                          href="/electronics-spa/en/USD/my-account/order/00001010"
+                          >June 4, 2021</a
+                        >
+                      </td>
+                      <td class="cx-order-history-status">
+                        <div class="d-md-none cx-order-history-label">
+                          Status
+                        </div>
+                        <a
+                          class="cx-order-history-value"
+                          href="/electronics-spa/en/USD/my-account/order/00001010"
+                        >
+                          Pending
+                        </a>
+                      </td>
+                      <td class="cx-order-history-total">
+                        <div class="d-md-none cx-order-history-label">
+                          Total
+                        </div>
+                        <a
+                          class="cx-order-history-value"
+                          href="/electronics-spa/en/USD/my-account/order/00001010"
+                        >
+                          $2,990.43
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="cx-order-history-sort bottom row"></div>
+              </div>
+            </div>
+          </cx-order-history>
+        </div>
+
+        <div>
+          <cx-order-return-request-list>
+            <div class="container">
+              <div class="cx-order-history-body"></div>
+            </div>
+          </cx-order-return-request-list>
+        </div> </cx-tab-paragraph-container
+    ></cx-page-slot>
+    <cx-page-slot position="SideContent" class="SideContent"></cx-page-slot>
+  </cx-page-layout>
+</main>
