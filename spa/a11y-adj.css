@@ -1,3 +1,14 @@
 .table .a11y-img {
   width: 16%;
 }
+.cx-visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+}
+
+.cx-actions td {
+  border: 0;
+  padding-top: 0;
+}
