@@ -3,7 +3,7 @@
   <link rel="stylesheet" href="a11y-adj.css" />
 </head>
 <main cxskiplink="cx-main" tabindex="-1" class="mouse-focus">
-  <h1>Cart Table with 2 headers</h1>
+  <h1>Cart Table with Spanned header, and 2 headers</h1>
 
   <router-outlet></router-outlet>
   <cx-page-layout class="CartPageTemplate">
@@ -30,8 +30,7 @@
 
               <thead>
                 <tr>
-                  <th scope="col">Thumbnail</th>
-                  <th scope="col">Description</th>
+                  <th colspan="2" scope="colgroup">Description</th>
                   <th scope="col">Item Price</th>
                   <th scope="col">Quantity</th>
                   <th scope="col">Total</th>
@@ -105,7 +104,7 @@
                       </div>
                     </cx-cart-item>
                   </td>
-                  <td class="total">
+                  <td class="a11y-total">
                     <cx-cart-item>
                       <cx-configurator-issues-notification>
                       </cx-configurator-issues-notification>

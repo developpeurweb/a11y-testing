@@ -1,6 +1,21 @@
+h1 {
+  text-align: center;
+  padding-top: 30px;
+}
+
 .table .a11y-img {
   width: 16%;
 }
+
+.table .a11y-price {
+  text-align: right;
+  width: 16%;
+}
+
+.table .a11y-total {
+  text-align: right;
+}
+
 .cx-visually-hidden {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute;
@@ -11,4 +26,8 @@
 .cx-actions td {
   border: 0;
   padding-top: 0;
+}
+
+.table thead th:first-of-type {
+  text-align: left;
 }
