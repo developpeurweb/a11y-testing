@@ -17,6 +17,10 @@ h1 {
   border-top: 1px solid #dee2e6;
 }
 
+.cx-table th {
+  background-color: bisque;
+}
+
 .cx-table thead th {
   border-bottom: 0;
   border-top: none;
