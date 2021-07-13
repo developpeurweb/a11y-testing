@@ -4,7 +4,12 @@
 
 <nav aria-label="get into the groove">
   <a href="#" aria-labelledby="override">The Button</a>
-  <button aria-describedby="desc1 desc2">The Button</button>
+  <button role="presentation" aria-describedby="desc1 desc2">
+    The Button with P
+  </button>
+  <div tabindex="0" role="presentation" aria-describedby="desc1 desc2">
+    Not a Button
+  </div>
   <button aria-label="vocalize this">The Button</button>
   <button aria-labelledby="override" aria-label="vocalize this">
     The Button

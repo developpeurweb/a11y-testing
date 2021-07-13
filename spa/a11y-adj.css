@@ -3,16 +3,49 @@ h1 {
   padding-top: 30px;
 }
 
-.table .a11y-img {
+/* agnostic framework */
+
+.cx-table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+.cx-table td,
+.cx-table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.cx-table thead th {
+  border-bottom: 0;
+  border-top: none;
+  font-size: 0.875rem;
+  font-weight: "semi";
+  text-transform: uppercase;
+  color: #747881;
+  text-align: center;
+}
+.cx-table td {
+  vertical-align: middle;
+}
+
+.cx-table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+/* --- */
+
+.cx-table .a11y-img {
   width: 16%;
 }
 
-.table .a11y-price {
+.cx-table .a11y-price {
   text-align: right;
   width: 16%;
 }
 
-.table .a11y-total {
+.cx-table .a11y-total {
   text-align: right;
 }
 
@@ -23,11 +56,13 @@ h1 {
   width: 0;
 }
 
-.cx-actions td {
+.cx-table .cx-actions td {
   border: 0;
   padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.table thead th:first-of-type {
+.cx-table thead th:first-of-type {
   text-align: left;
 }
