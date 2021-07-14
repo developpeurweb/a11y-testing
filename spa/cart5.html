@@ -4,7 +4,7 @@
 </head>
 <main cxskiplink="cx-main" tabindex="-1" class="mouse-focus">
   <h1>Cart Table with 2 header sets and 1 spanned header</h1>
-  <h2>Minified CSS</h2>
+  <h2>Minified CSS + Responsive</h2>
 
   <router-outlet></router-outlet>
   <cx-page-layout class="CartPageTemplate">
@@ -76,14 +76,14 @@
                       <div class="cx-code">ID 779841</div>
                     </cx-cart-item>
                   </th>
-                  <td class="a11y-price">
+                  <td data-th="Item Price" class="a11y-price">
                     <cx-cart-item>
                       <cx-configurator-issues-notification>
                       </cx-configurator-issues-notification>
                       <div class="cx-value">$3.45</div>
                     </cx-cart-item>
                   </td>
-                  <td class="a11y-qty">
+                  <td data-th="Quantity" class="a11y-qty">
                     <cx-cart-item>
                       <cx-configurator-issues-notification>
                       </cx-configurator-issues-notification>
@@ -105,7 +105,7 @@
                       </div>
                     </cx-cart-item>
                   </td>
-                  <td class="a11y-total">
+                  <td data-th="Total" class="a11y-total">
                     <cx-cart-item>
                       <cx-configurator-issues-notification>
                       </cx-configurator-issues-notification>
