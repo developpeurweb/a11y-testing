@@ -1,0 +1,39 @@
+/* responsive table */
+
+@media (max-width: 767px) {
+  .cx-table td:before {
+    content: attr(data-th);
+    color: red;
+    font-weight: bold;
+    width: 6.5em;
+    font-size: 0.875rem;
+  }
+
+  .cx-table thead {
+    display: none;
+  }
+  .cx-table td,
+  .cx-table th {
+    display: flex;
+    border-top: 0 none;
+    padding: 0.25em;
+    align-items: center;
+  }
+
+  .cx-table .a11y-desc,
+  .cx-table .a11y-price,
+  .cx-table .a11y-qty,
+  .cx-table .a11y-total {
+    /* remove these important later */
+    text-align: left !important;
+    width: 100% !important;
+  }
+
+  .cx-table .a11y-img {
+    flex-direction: row;
+  }
+
+  .cx-table .cx-remove-btn {
+    justify-content: flex-end;
+  }
+}
