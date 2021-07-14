@@ -1,4 +1,5 @@
-h1 {
+h1,
+h2 {
   text-align: center;
   padding-top: 30px;
 }
@@ -70,4 +71,10 @@ h1 {
 
 .cx-table thead th:first-of-type {
   text-align: left;
+}
+
+/* patches for minified version */
+
+cx-configurator-issues-notification:not(:empty) {
+  display: none;
 }

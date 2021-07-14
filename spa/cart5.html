@@ -1,0 +1,900 @@
+<head>
+  <link rel="stylesheet" href="styles-min.css" />
+  <link rel="stylesheet" href="a11y-adj.css" />
+</head>
+<main cxskiplink="cx-main" tabindex="-1" class="mouse-focus">
+  <h1>Cart Table with 2 header sets and 1 spanned header</h1>
+  <h2>Minified CSS</h2>
+
+  <router-outlet></router-outlet>
+  <cx-page-layout class="CartPageTemplate">
+    <cx-page-slot position="TopContent" class="TopContent has-components">
+      <cx-cart-details>
+        <div class="cart-details-wrapper">
+          <div class="cx-total">Cart #00001007</div>
+          <cx-promotions>
+            <div class="cx-promotions">
+              <ul>
+                <li>Buy over $200.00 get $20.00 discount on cart</li>
+              </ul>
+            </div>
+          </cx-promotions>
+
+          <!-- Accessible Table Starts -->
+          <cx-cart-item-list>
+            <table class="cx-table">
+              <caption class="cx-visually-hidden">
+                <span>Shopping cart, total </span>
+                <span class="total"> $2,981.44</span>
+                <span> dollars</span>
+              </caption>
+
+              <thead>
+                <tr>
+                  <th colspan="2" scope="colgroup">Description</th>
+                  <th scope="col">Item Price</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody class="cx-cart-item">
+                <tr>
+                  <td class="a11y-img">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <a
+                        cxmodal="dismiss"
+                        tabindex="-1"
+                        href="/electronics-spa/en/USD/product/779841/FUN%20Flash%20Single%20Use%20Camera,%2027%2B12%20pic"
+                      >
+                        <cx-media format="cartIcon" class="is-initialized"
+                          ><img
+                            src="https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxODQ1fGltYWdlL2pwZWd8aW1hZ2VzL2hkNC9oZmEvODc5NzI4OTU3ODUyNi5qcGd8YWNmMTVmODEzN2U3MmI0ZjAyN2E5YTA5NmNiNDg2YTA3MTJjOTViMDg0MTQxMGZjOWM1OGM5NTI4ZDFiNTcxOA"
+                            srcset="
+                              https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxODQ1fGltYWdlL2pwZWd8aW1hZ2VzL2hkNC9oZmEvODc5NzI4OTU3ODUyNi5qcGd8YWNmMTVmODEzN2U3MmI0ZjAyN2E5YTA5NmNiNDg2YTA3MTJjOTViMDg0MTQxMGZjOWM1OGM5NTI4ZDFiNTcxOA 65w
+                            "
+                            alt="FUN Flash Single Use Camera, 27+12 pic"
+                          />
+                        </cx-media>
+                      </a>
+                    </cx-cart-item>
+                  </td>
+                  <th scope="col" class="a11y-desc">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-name">
+                        <a
+                          cxmodal="dismiss"
+                          class="cx-link"
+                          href="/electronics-spa/en/USD/product/779841/FUN%20Flash%20Single%20Use%20Camera,%2027%2B12%20pic"
+                          >FUN Flash Single Use Camera, 27+12 pic</a
+                        >
+                      </div>
+
+                      <div class="cx-code">ID 779841</div>
+                    </cx-cart-item>
+                  </th>
+                  <td class="a11y-price">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-value">$3.45</div>
+                    </cx-cart-item>
+                  </td>
+                  <td class="a11y-qty">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-value">
+                        <cx-item-counter>
+                          <button type="button" tabindex="-1" disabled="">
+                            -
+                          </button>
+                          <input
+                            type="number"
+                            min="1"
+                            max="243"
+                            step="1"
+                            tabindex="0"
+                            class="ng-untouched ng-pristine ng-valid"
+                          />
+                          <button type="button" tabindex="-1">+</button>
+                        </cx-item-counter>
+                      </div>
+                    </cx-cart-item>
+                  </td>
+                  <td class="a11y-total">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-value">$3.45</div>
+                    </cx-cart-item>
+                  </td>
+                </tr>
+                <tr class="cx-actions">
+                  <td colspan="5" scope="colgroup" class="cx-remove-btn">
+                    <button class="link cx-action-link">Remove</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="a11y-img">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <a
+                        cxmodal="dismiss"
+                        tabindex="-1"
+                        href="/electronics-spa/en/USD/product/1934406/HDR-CX105E%20%20Red"
+                      >
+                        <cx-media format="cartIcon" class="is-initialized"
+                          ><img
+                            src="https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxNTYxfGltYWdlL2pwZWd8aW1hZ2VzL2hmZC9oYmUvODc5NzI3MTgxODI3MC5qcGd8MTZkNjFmN2FjMWRkNDUyNzQzMDI4OTJhMDAyZTJhOWUxYzljMmJkZmM1NDQ1NTI2NDZhZjgwMzA2ODQyZDk2Yw"
+                            srcset="
+                              https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxNTYxfGltYWdlL2pwZWd8aW1hZ2VzL2hmZC9oYmUvODc5NzI3MTgxODI3MC5qcGd8MTZkNjFmN2FjMWRkNDUyNzQzMDI4OTJhMDAyZTJhOWUxYzljMmJkZmM1NDQ1NTI2NDZhZjgwMzA2ODQyZDk2Yw 65w
+                            "
+                            alt="HDR-CX105E  Red"
+                          />
+                        </cx-media>
+                      </a>
+                    </cx-cart-item>
+                  </td>
+                  <th scope="col" class="a11y-desc">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-name">
+                        <a
+                          cxmodal="dismiss"
+                          class="cx-link"
+                          href="/electronics-spa/en/USD/product/1934398/HDR-XR105E"
+                          >HDR-XR105E</a
+                        >
+                      </div>
+
+                      <div class="cx-code">ID 1934398</div>
+                    </cx-cart-item>
+                  </th>
+                  <td class="a11y-price">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-value">$452.88</div>
+                    </cx-cart-item>
+                  </td>
+                  <td class="a11y-qty">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-value">
+                        <cx-item-counter>
+                          <button type="button" tabindex="-1" disabled="">
+                            -
+                          </button>
+                          <input
+                            type="number"
+                            min="1"
+                            max="243"
+                            step="1"
+                            tabindex="0"
+                            class="ng-untouched ng-pristine ng-valid"
+                          />
+                          <button type="button" tabindex="-1">+</button>
+                        </cx-item-counter>
+                      </div>
+                    </cx-cart-item>
+                  </td>
+                  <td class="a11y-total">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-value">$452.88</div>
+                    </cx-cart-item>
+                  </td>
+                </tr>
+                <tr class="cx-actions">
+                  <td colspan="5" scope="colgroup" class="cx-remove-btn">
+                    <button class="link cx-action-link">Remove</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="a11y-img">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <a
+                        cxmodal="dismiss"
+                        tabindex="-1"
+                        href="/electronics-spa/en/USD/product/1986316/LEGRIA%20HF%20S100"
+                      >
+                        <cx-media format="cartIcon" class="is-initialized"
+                          ><img
+                            src="https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxNDE2fGltYWdlL2pwZWd8aW1hZ2VzL2g0Zi9oN2UvODc5NzI3NDM3NDE3NC5qcGd8NjhjZjI4MjUyNmNkYWMxNDBlOTE4Y2ZhNmY5MmRmZGFjNzJkMTJhNDdiODdjZjAzZmJjYWI3YzE3M2M4NTA0ZA"
+                            srcset="
+                              https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxNDE2fGltYWdlL2pwZWd8aW1hZ2VzL2g0Zi9oN2UvODc5NzI3NDM3NDE3NC5qcGd8NjhjZjI4MjUyNmNkYWMxNDBlOTE4Y2ZhNmY5MmRmZGFjNzJkMTJhNDdiODdjZjAzZmJjYWI3YzE3M2M4NTA0ZA 65w
+                            "
+                            alt="LEGRIA HF S100"
+                          />
+                        </cx-media>
+                      </a>
+                    </cx-cart-item>
+                  </td>
+                  <th scope="col" class="a11y-desc">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-name">
+                        <a
+                          cxmodal="dismiss"
+                          class="cx-link"
+                          href="/electronics-spa/en/USD/product/1986316/LEGRIA%20HF%20S100"
+                          >LEGRIA HF S100</a
+                        >
+                      </div>
+
+                      <div class="cx-code">ID 1986316</div>
+                    </cx-cart-item>
+                  </th>
+                  <td class="a11y-price">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-value">$1,934.23</div>
+                    </cx-cart-item>
+                  </td>
+                  <td class="a11y-qty">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-value">
+                        <cx-item-counter>
+                          <button type="button" tabindex="-1" disabled="">
+                            -
+                          </button>
+                          <input
+                            type="number"
+                            min="1"
+                            max="243"
+                            step="1"
+                            tabindex="0"
+                            class="ng-untouched ng-pristine ng-valid"
+                          />
+                          <button type="button" tabindex="-1">+</button>
+                        </cx-item-counter>
+                      </div>
+                    </cx-cart-item>
+                  </td>
+                  <td class="a11y-total">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-value">$1,934.23</div>
+                    </cx-cart-item>
+                  </td>
+                </tr>
+                <tr class="cx-actions">
+                  <td colspan="5" scope="colgroup" class="cx-remove-btn">
+                    <button class="link cx-action-link">Remove</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="a11y-img">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <a
+                        cxmodal="dismiss"
+                        tabindex="-1"
+                        href="/electronics-spa/en/USD/product/1934398/HDR-XR105E"
+                      >
+                        <cx-media format="cartIcon" class="is-initialized"
+                          ><img
+                            src="https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxNDk5fGltYWdlL2pwZWd8aW1hZ2VzL2gzMy9oZTAvODc5NzI3MTc1MjczNC5qcGd8MjlkZjFlZmEwNzE2Yzk4NzhlNDA2NDY2OTQ1Njc3NjI1YzNmYzc0OWU5OTcwNzM5YmVmZmY2ZDMzZGFkMjA5YQ"
+                            srcset="
+                              https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxNDk5fGltYWdlL2pwZWd8aW1hZ2VzL2gzMy9oZTAvODc5NzI3MTc1MjczNC5qcGd8MjlkZjFlZmEwNzE2Yzk4NzhlNDA2NDY2OTQ1Njc3NjI1YzNmYzc0OWU5OTcwNzM5YmVmZmY2ZDMzZGFkMjA5YQ 65w
+                            "
+                            alt="HDR-XR105E"
+                          />
+                        </cx-media>
+                      </a>
+                    </cx-cart-item>
+                  </td>
+                  <th scope="col" class="a11y-desc">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-name">
+                        <a
+                          cxmodal="dismiss"
+                          class="cx-link"
+                          href="/electronics-spa/en/USD/product/1934398/HDR-XR105E"
+                          >HDR-XR105E</a
+                        >
+                      </div>
+
+                      <div class="cx-code">ID 1934398</div>
+                    </cx-cart-item>
+                  </th>
+                  <td class="a11y-price">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-value">$610.88</div>
+                    </cx-cart-item>
+                  </td>
+                  <td class="a11y-qty">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-value">
+                        <cx-item-counter>
+                          <button type="button" tabindex="-1" disabled="">
+                            -
+                          </button>
+                          <input
+                            type="number"
+                            min="1"
+                            max="243"
+                            step="1"
+                            tabindex="0"
+                            class="ng-untouched ng-pristine ng-valid"
+                          />
+                          <button type="button" tabindex="-1">+</button>
+                        </cx-item-counter>
+                      </div>
+                    </cx-cart-item>
+                  </td>
+                  <td class="a11y-total">
+                    <cx-cart-item>
+                      <cx-configurator-issues-notification>
+                      </cx-configurator-issues-notification>
+                      <div class="cx-value">$610.88</div>
+                    </cx-cart-item>
+                  </td>
+                </tr>
+                <tr class="cx-actions">
+                  <td colspan="5" scope="colgroup" class="cx-remove-btn">
+                    <button class="link cx-action-link">Remove</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </cx-cart-item-list>
+          <!-- Accessible Table Ends -->
+
+          <!-- <cx-cart-item-list>
+            <div class="d-none d-md-block d-lg-block d-xl-block">
+              <div class="cx-item-list-header row">
+                <div class="cx-item-list-desc col-md-5 col-lg-5 col-xl-6">
+                  Description
+                </div>
+                <div class="cx-item-list-price col-md-3 col-lg-2 col-xl-2">
+                  Item price
+                </div>
+                <div class="cx-item-list-qty col-md-2 col-lg-3 col-xl-2">
+                  Qty
+                </div>
+                <div class="cx-item-list-total col-md-2 col-lg-2 col-xl-2">
+                  Total
+                </div>
+              </div>
+            </div>
+
+            <div class="cx-item-list-row">
+              <div class="cx-item-list-items">
+                <cx-cart-item>
+                  <cx-configurator-issues-notification>
+                  </cx-configurator-issues-notification>
+                  <div class="row">
+                    <div class="col-2 cx-image-container">
+                      <a
+                        cxmodal="dismiss"
+                        tabindex="-1"
+                        href="/electronics-spa/en/USD/product/779841/FUN%20Flash%20Single%20Use%20Camera,%2027%2B12%20pic"
+                      >
+                        <cx-media format="cartIcon" class="is-initialized"
+                          ><img
+                            src="https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxODQ1fGltYWdlL2pwZWd8aW1hZ2VzL2hkNC9oZmEvODc5NzI4OTU3ODUyNi5qcGd8YWNmMTVmODEzN2U3MmI0ZjAyN2E5YTA5NmNiNDg2YTA3MTJjOTViMDg0MTQxMGZjOWM1OGM5NTI4ZDFiNTcxOA"
+                            srcset="
+                              https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxODQ1fGltYWdlL2pwZWd8aW1hZ2VzL2hkNC9oZmEvODc5NzI4OTU3ODUyNi5qcGd8YWNmMTVmODEzN2U3MmI0ZjAyN2E5YTA5NmNiNDg2YTA3MTJjOTViMDg0MTQxMGZjOWM1OGM5NTI4ZDFiNTcxOA 65w
+                            "
+                            alt="FUN Flash Single Use Camera, 27+12 pic"
+                          />
+                        </cx-media>
+                      </a>
+                    </div>
+                    <div class="cx-info col-10">
+                      <div class="cx-info-container row">
+                        <div class="col-md-3 col-lg-3 col-xl-5">
+                          <div class="cx-name">
+                            <a
+                              cxmodal="dismiss"
+                              class="cx-link"
+                              href="/electronics-spa/en/USD/product/779841/FUN%20Flash%20Single%20Use%20Camera,%2027%2B12%20pic"
+                              >FUN Flash Single Use Camera, 27+12 pic</a
+                            >
+                          </div>
+
+                          <div class="cx-code">ID 779841</div>
+
+                          <cx-configurator-cart-entry-info>
+                          </cx-configurator-cart-entry-info>
+                        </div>
+                        <div class="cx-price col-md-3 col-lg-3 col-xl-2">
+                          <div
+                            class="
+                              cx-label
+                              d-block d-md-none d-lg-none d-xl-none
+                            "
+                          >
+                            Item price
+                          </div>
+                          <div class="cx-value">$3.45</div>
+                        </div>
+
+                        <div class="cx-quantity col-3">
+                          <div
+                            placement="left"
+                            class="
+                              cx-label
+                              d-block d-md-none d-lg-none d-xl-none
+                            "
+                            title="The quantity represents the total number of this item in your cart."
+                          >
+                            Qty
+                          </div>
+                          <div class="cx-value">
+                            <cx-item-counter
+                              ><button type="button" tabindex="-1" disabled="">
+                                -</button
+                              ><input
+                                type="number"
+                                min="1"
+                                max="243"
+                                step="1"
+                                tabindex="0"
+                                class="ng-untouched ng-pristine ng-valid"
+                              /><button type="button" tabindex="-1">
+                                +
+                              </button></cx-item-counter
+                            >
+                          </div>
+                        </div>
+                        <div class="cx-total col-md-3 col-xl-2">
+                          <div
+                            class="
+                              cx-label
+                              d-block d-md-none d-lg-none d-xl-none
+                            "
+                          >
+                            Total
+                          </div>
+                          <div class="cx-value">$3.45</div>
+                        </div>
+                      </div>
+
+                      <cx-configurator-cart-entry-bundle-info>
+                      </cx-configurator-cart-entry-bundle-info>
+
+                      <cx-promotions>
+                        <div class="cx-promotions"></div>
+                      </cx-promotions>
+
+                      <div class="cx-actions col-12">
+                        <div class="col-md-3 cx-remove-btn">
+                          <button class="link cx-action-link">Remove</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </cx-cart-item>
+              </div>
+            </div>
+            <div class="cx-item-list-row">
+              <div class="cx-item-list-items">
+                <cx-cart-item>
+                  <cx-configurator-issues-notification>
+                  </cx-configurator-issues-notification>
+                  <div class="row">
+                    <div class="col-2 cx-image-container">
+                      <a
+                        cxmodal="dismiss"
+                        tabindex="-1"
+                        href="/electronics-spa/en/USD/product/1934406/HDR-CX105E%20%20Red"
+                      >
+                        <cx-media format="cartIcon" class="is-initialized"
+                          ><img
+                            src="https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxNTYxfGltYWdlL2pwZWd8aW1hZ2VzL2hmZC9oYmUvODc5NzI3MTgxODI3MC5qcGd8MTZkNjFmN2FjMWRkNDUyNzQzMDI4OTJhMDAyZTJhOWUxYzljMmJkZmM1NDQ1NTI2NDZhZjgwMzA2ODQyZDk2Yw"
+                            srcset="
+                              https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxNTYxfGltYWdlL2pwZWd8aW1hZ2VzL2hmZC9oYmUvODc5NzI3MTgxODI3MC5qcGd8MTZkNjFmN2FjMWRkNDUyNzQzMDI4OTJhMDAyZTJhOWUxYzljMmJkZmM1NDQ1NTI2NDZhZjgwMzA2ODQyZDk2Yw 65w
+                            "
+                            alt="HDR-CX105E  Red"
+                          />
+                        </cx-media>
+                      </a>
+                    </div>
+                    <div class="cx-info col-10">
+                      <div class="cx-info-container row">
+                        <div class="col-md-3 col-lg-3 col-xl-5">
+                          <div class="cx-name">
+                            <a
+                              cxmodal="dismiss"
+                              class="cx-link"
+                              href="/electronics-spa/en/USD/product/1934406/HDR-CX105E%20%20Red"
+                              >HDR-CX105E Red</a
+                            >
+                          </div>
+
+                          <div class="cx-code">ID 1934406</div>
+
+                          <cx-configurator-cart-entry-info>
+                          </cx-configurator-cart-entry-info>
+                        </div>
+                        <div class="cx-price col-md-3 col-lg-3 col-xl-2">
+                          <div
+                            class="
+                              cx-label
+                              d-block d-md-none d-lg-none d-xl-none
+                            "
+                          >
+                            Item price
+                          </div>
+                          <div class="cx-value">$452.88</div>
+                        </div>
+
+                        <div class="cx-quantity col-3">
+                          <div
+                            placement="left"
+                            class="
+                              cx-label
+                              d-block d-md-none d-lg-none d-xl-none
+                            "
+                            title="The quantity represents the total number of this item in your cart."
+                          >
+                            Qty
+                          </div>
+                          <div class="cx-value">
+                            <cx-item-counter
+                              ><button type="button" tabindex="-1" disabled="">
+                                -</button
+                              ><input
+                                type="number"
+                                min="1"
+                                max="284"
+                                step="1"
+                                tabindex="0"
+                                class="ng-untouched ng-pristine ng-valid"
+                              /><button type="button" tabindex="-1">
+                                +
+                              </button></cx-item-counter
+                            >
+                          </div>
+                        </div>
+                        <div class="cx-total col-md-3 col-xl-2">
+                          <div
+                            class="
+                              cx-label
+                              d-block d-md-none d-lg-none d-xl-none
+                            "
+                          >
+                            Total
+                          </div>
+                          <div class="cx-value">$452.88</div>
+                        </div>
+                      </div>
+
+                      <cx-configurator-cart-entry-bundle-info>
+                      </cx-configurator-cart-entry-bundle-info>
+
+                      <cx-promotions>
+                        <div class="cx-promotions"></div>
+                      </cx-promotions>
+
+                      <div class="cx-actions col-12">
+                        <div class="col-md-3 cx-remove-btn">
+                          <button class="link cx-action-link">Remove</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </cx-cart-item>
+              </div>
+            </div>
+            <div class="cx-item-list-row">
+              <div class="cx-item-list-items">
+                <cx-cart-item>
+                  <cx-configurator-issues-notification>
+                  </cx-configurator-issues-notification>
+                  <div class="row">
+                    <div class="col-2 cx-image-container">
+                      <a
+                        cxmodal="dismiss"
+                        tabindex="-1"
+                        href="/electronics-spa/en/USD/product/1986316/LEGRIA%20HF%20S100"
+                      >
+                        <cx-media format="cartIcon" class="is-initialized"
+                          ><img
+                            src="https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxNDE2fGltYWdlL2pwZWd8aW1hZ2VzL2g4Ny9oMDYvODc5NzI3Mzk4MDk1OC5qcGd8MmU0MmZlYjM2YjYyZTgyMjkxMmY5OTUyNjE2NGI3ZmVjZWM0ZDVjMTRiYjllNGE1OWQ1ZDExYWVhYTIzNGU1Yw"
+                            srcset="
+                              https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxNDE2fGltYWdlL2pwZWd8aW1hZ2VzL2g4Ny9oMDYvODc5NzI3Mzk4MDk1OC5qcGd8MmU0MmZlYjM2YjYyZTgyMjkxMmY5OTUyNjE2NGI3ZmVjZWM0ZDVjMTRiYjllNGE1OWQ1ZDExYWVhYTIzNGU1Yw 65w
+                            "
+                            alt="LEGRIA HF S100"
+                          />
+                        </cx-media>
+                      </a>
+                    </div>
+                    <div class="cx-info col-10">
+                      <div class="cx-info-container row">
+                        <div class="col-md-3 col-lg-3 col-xl-5">
+                          <div class="cx-name">
+                            <a
+                              cxmodal="dismiss"
+                              class="cx-link"
+                              href="/electronics-spa/en/USD/product/1986316/LEGRIA%20HF%20S100"
+                              >LEGRIA HF S100</a
+                            >
+                          </div>
+
+                          <div class="cx-code">ID 1986316</div>
+
+                          <cx-configurator-cart-entry-info>
+                          </cx-configurator-cart-entry-info>
+                        </div>
+                        <div class="cx-price col-md-3 col-lg-3 col-xl-2">
+                          <div
+                            class="
+                              cx-label
+                              d-block d-md-none d-lg-none d-xl-none
+                            "
+                          >
+                            Item price
+                          </div>
+                          <div class="cx-value">$1,934.23</div>
+                        </div>
+
+                        <div class="cx-quantity col-3">
+                          <div
+                            placement="left"
+                            class="
+                              cx-label
+                              d-block d-md-none d-lg-none d-xl-none
+                            "
+                            title="The quantity represents the total number of this item in your cart."
+                          >
+                            Qty
+                          </div>
+                          <div class="cx-value">
+                            <cx-item-counter
+                              ><button type="button" tabindex="-1" disabled="">
+                                -</button
+                              ><input
+                                type="number"
+                                min="1"
+                                max="1000"
+                                step="1"
+                                tabindex="0"
+                                class="ng-untouched ng-pristine ng-valid"
+                              /><button type="button" tabindex="-1">
+                                +
+                              </button></cx-item-counter
+                            >
+                          </div>
+                        </div>
+                        <div class="cx-total col-md-3 col-xl-2">
+                          <div
+                            class="
+                              cx-label
+                              d-block d-md-none d-lg-none d-xl-none
+                            "
+                          >
+                            Total
+                          </div>
+                          <div class="cx-value">$1,934.23</div>
+                        </div>
+                      </div>
+
+                      <cx-configurator-cart-entry-bundle-info>
+                      </cx-configurator-cart-entry-bundle-info>
+
+                      <cx-promotions>
+                        <div class="cx-promotions"></div>
+                      </cx-promotions>
+
+                      <div class="cx-actions col-12">
+                        <div class="col-md-3 cx-remove-btn">
+                          <button class="link cx-action-link">Remove</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </cx-cart-item>
+              </div>
+            </div>
+            <div class="cx-item-list-row">
+              <div class="cx-item-list-items">
+                <cx-cart-item>
+                  <cx-configurator-issues-notification>
+                  </cx-configurator-issues-notification>
+                  <div class="row">
+                    <div class="col-2 cx-image-container">
+                      <a
+                        cxmodal="dismiss"
+                        tabindex="-1"
+                        href="/electronics-spa/en/USD/product/1934398/HDR-XR105E"
+                      >
+                        <cx-media format="cartIcon" class="is-initialized"
+                          ><img
+                            src="https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxNDk5fGltYWdlL2pwZWd8aW1hZ2VzL2gzMy9oZTAvODc5NzI3MTc1MjczNC5qcGd8MjlkZjFlZmEwNzE2Yzk4NzhlNDA2NDY2OTQ1Njc3NjI1YzNmYzc0OWU5OTcwNzM5YmVmZmY2ZDMzZGFkMjA5YQ"
+                            srcset="
+                              https://spartacus-uiux.eastus.cloudapp.azure.com:9002/medias/?context=bWFzdGVyfGltYWdlc3wxNDk5fGltYWdlL2pwZWd8aW1hZ2VzL2gzMy9oZTAvODc5NzI3MTc1MjczNC5qcGd8MjlkZjFlZmEwNzE2Yzk4NzhlNDA2NDY2OTQ1Njc3NjI1YzNmYzc0OWU5OTcwNzM5YmVmZmY2ZDMzZGFkMjA5YQ 65w
+                            "
+                            alt="HDR-XR105E"
+                          />
+                        </cx-media>
+                      </a>
+                    </div>
+                    <div class="cx-info col-10">
+                      <div class="cx-info-container row">
+                        <div class="col-md-3 col-lg-3 col-xl-5">
+                          <div class="cx-name">
+                            <a
+                              cxmodal="dismiss"
+                              class="cx-link"
+                              href="/electronics-spa/en/USD/product/1934398/HDR-XR105E"
+                              >HDR-XR105E</a
+                            >
+                          </div>
+
+                          <div class="cx-code">ID 1934398</div>
+
+                          <cx-configurator-cart-entry-info>
+                          </cx-configurator-cart-entry-info>
+                        </div>
+                        <div class="cx-price col-md-3 col-lg-3 col-xl-2">
+                          <div
+                            class="
+                              cx-label
+                              d-block d-md-none d-lg-none d-xl-none
+                            "
+                          >
+                            Item price
+                          </div>
+                          <div class="cx-value">$610.88</div>
+                        </div>
+
+                        <div class="cx-quantity col-3">
+                          <div
+                            placement="left"
+                            class="
+                              cx-label
+                              d-block d-md-none d-lg-none d-xl-none
+                            "
+                            title="The quantity represents the total number of this item in your cart."
+                          >
+                            Qty
+                          </div>
+                          <div class="cx-value">
+                            <cx-item-counter
+                              ><button type="button" tabindex="-1" disabled="">
+                                -</button
+                              ><input
+                                type="number"
+                                min="1"
+                                max="36"
+                                step="1"
+                                tabindex="0"
+                                class="ng-untouched ng-pristine ng-valid"
+                              /><button type="button" tabindex="-1">
+                                +
+                              </button></cx-item-counter
+                            >
+                          </div>
+                        </div>
+                        <div class="cx-total col-md-3 col-xl-2">
+                          <div
+                            class="
+                              cx-label
+                              d-block d-md-none d-lg-none d-xl-none
+                            "
+                          >
+                            Total
+                          </div>
+                          <div class="cx-value">$610.88</div>
+                        </div>
+                      </div>
+
+                      <cx-configurator-cart-entry-bundle-info>
+                      </cx-configurator-cart-entry-bundle-info>
+
+                      <cx-promotions>
+                        <div class="cx-promotions"></div>
+                      </cx-promotions>
+
+                      <div class="cx-actions col-12">
+                        <div class="col-md-3 cx-remove-btn">
+                          <button class="link cx-action-link">Remove</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </cx-cart-item>
+              </div>
+            </div>
+          </cx-cart-item-list> -->
+        </div>
+      </cx-cart-details>
+
+      <cx-save-for-later> </cx-save-for-later>
+    </cx-page-slot>
+    <cx-page-slot
+      position="CenterRightContentSlot"
+      class="CenterRightContentSlot has-components"
+    >
+      <cx-cart-totals>
+        <cx-order-summary>
+          <h4>Order Summary</h4>
+          <div class="cx-summary-partials">
+            <div class="cx-summary-row">
+              <div class="col-6 cx-summary-label">
+                Subtotal after discounts:
+              </div>
+              <div class="col-6 cx-summary-amount">$2,981.44</div>
+            </div>
+            <div class="cx-summary-row">
+              <div class="col-6 cx-summary-label">Estimated shipping:</div>
+              <div class="col-6 cx-summary-amount">TBD</div>
+            </div>
+            <div class="cx-summary-row">
+              The order total includes tax of $0.00.
+            </div>
+
+            <div class="cx-summary-row cx-summary-total">
+              <div class="col-6 cx-summary-label">Total:</div>
+              <div class="col-6 cx-summary-amount">$2,981.44</div>
+            </div>
+            <div class="cx-summary-row">You saved: $20.00</div>
+          </div>
+
+          <cx-applied-coupons>
+            <div></div>
+          </cx-applied-coupons> </cx-order-summary
+        ><button type="button" class="btn btn-primary btn-block" tabindex="0">
+          Proceed to Checkout
+        </button>
+      </cx-cart-totals>
+
+      <cx-cart-coupon>
+        <div class="cx-cart-coupon-title">Have a coupon?</div>
+        <div class="form-group">
+          <form novalidate="" class="ng-untouched ng-pristine ng-invalid">
+            <div class="cx-cart-coupon-container">
+              <input
+                type="text"
+                formcontrolname="couponCode"
+                class="
+                  form-control
+                  input-coupon-code
+                  ng-untouched ng-pristine ng-invalid
+                "
+                placeholder="Promo code"
+              /><button
+                type="submit"
+                class="btn btn-block btn-action apply-coupon-button"
+              >
+                Apply
+              </button>
+              <cx-form-errors class="control-invalid">
+                <p>This field is required</p>
+              </cx-form-errors>
+            </div>
+          </form>
+        </div>
+        <cx-applied-coupons>
+          <div class="row"></div>
+        </cx-applied-coupons>
+      </cx-cart-coupon>
+    </cx-page-slot>
+  </cx-page-layout>
+</main>
