@@ -5,7 +5,6 @@ h2 {
 }
 
 /* agnostic framework */
-
 .cx-table {
   width: 100%;
   margin-bottom: 1rem;
@@ -20,7 +19,7 @@ h2 {
 }
 
 .cx-table th {
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
 }
 
 .cx-table thead th {
@@ -41,6 +40,33 @@ h2 {
 }
 
 /* --- */
+
+/* adjusting for test6 */
+.cx-table .a11y-desc2 {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  /* align-items: flex-start; */
+}
+
+.cx-table .a11y-img2 {
+  width: 75%;
+  /* --cx-flex-basis: 40%; */
+}
+
+@media (max-width: 767px) {
+  .cx-table .a11y-desc2 {
+    width: 100%;
+  }
+
+  .cx-table .a11y-img2 {
+    width: 100px;
+    margin-right: 12px;
+    /* --cx-flex-basis: 40%; */
+  }
+}
+
+/* normal values */
 
 .cx-table .a11y-img {
   width: 16%;
